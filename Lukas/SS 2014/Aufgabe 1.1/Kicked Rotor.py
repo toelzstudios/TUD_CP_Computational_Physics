@@ -15,8 +15,7 @@ def phase_std(q_0, p_0, K, N = 1000):
     return [q, p]
 
 
-varK = 1.0
-
+varK = 2.6
 
 fig = plt.figure()
 fig.set_size_inches(16.27, 22.69)
@@ -33,7 +32,7 @@ def onclick(event):
     event.canvas.figure.gca().plot(x, y, '.')
     event.canvas.draw()
 
-
 cid = fig.canvas.mpl_connect('button_press_event', onclick)
 
 plt.show()
+
